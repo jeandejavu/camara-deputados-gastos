@@ -1,0 +1,22 @@
+{
+  "name": "camara-deputados",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "build": "sucrase ./src -d ./dist --transforms imports",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "express": "^4.17.1",
+    "express-async-errors": "^3.1.1",
+    "jsdom": "^16.2.2",
+    "youch": "^2.0.10"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4",
+    "sucrase": "^3.14.0"
+  }
+}
